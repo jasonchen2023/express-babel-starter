@@ -79,7 +79,7 @@ io.on('connection', (socket) => {
     });
   };
 
-  // creates notes and
+  // creates notes
   socket.on('createNote', (fields) => {
     console.log(fields);
     Notes.createNote(fields).then((result) => {
